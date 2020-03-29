@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="..\css\main.css" media="screen"/>
+    <title>Mahjong</title>
+</head>
+
+<body background="../img/paper2b3.jpg">
+    <div class="contenedorTotal">
+
+        <header id="cabeceraNivel"><h2>SELECCIÓN DE NIVEL</h2></header>
+
+        <div class="contenedorNiveles">
+
+            <div class="circuloNivel"><h1>NIVEL 1</h1></div>
+
+            <div class="circuloNivel"><h1>NIVEL 2</h1></div>
+
+            <div class="circuloNivel"><h1>NIVEL 3</h1></div>
+
+        </div>
+
+<div class="footer">
+        <a id="botonComenzar" href="index.html" style="color:rgb(0,98,204);"><h2>VOLVER</h2>
+
+        <a id="botonVolver" href="index.html" style="color:rgb(33,136,56);"><h2>COMENZAR</h2>
+</div>
+    </div>
+
+</body>
+</html>

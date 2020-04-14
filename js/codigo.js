@@ -1,4 +1,4 @@
-function ponerFotosAleatorias(){
+function imagenAleatoria(){
     var imagenArray = new Array("medusas.jpg",
                                  "montañas.jpg",
                                  "perros.jpg",
@@ -7,10 +7,13 @@ function ponerFotosAleatorias(){
                                  "flores.jpg",
                                  "casa.jpg",
                                  "edificio.jpg");
-    var numeroDeCeldas = ;
-    var elemento = document.body;
-    elemento.getElementsByTagName();
-    var imagenArrayLength = imagenArray.length;
-    var aleatorio = Math.round(Math.random * imagenArrayLength - 1);
 
+    var imagenArrayLength = imagenArray.length;
+    for(var i = 0; i < 6; i++){
+        for(var j = 0; j < 6; j++){
+            var aleatorio = Math.random() * imagenArrayLength;
+            var elemento = document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j];
+            elemento.innerHTML = "<img src=\"../img/"+imagenArray[parseInt(aleatorio)]+"\"></img>"
+        }
+    }
 }

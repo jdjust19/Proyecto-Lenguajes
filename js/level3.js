@@ -14,13 +14,10 @@ function imagenAleatoria(){
                                  "Foto7.jpg",
                                  "Foto7.jpg",
                                  "Foto8.jpg",
-                                 "Foto8.jpg",
-                                 "Foto7.jpg",
-                                 "Foto7.jpg");
-    for(var i = 0; i < 6; i++){
-        for(var j = 0; j < 6; j++){
+                                 "Foto8.jpg");
+    for(var i = 0; i < document.getElementsByTagName('tr').length; i++){
+        for(var j = 0; j < document.getElementsByTagName('tr').length; j++){
             var aleatorio = Math.random() * imagenArray.length;
-            console.log(imagenArray.length);
             var elemento = document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j];
             elemento.innerHTML = "<img src=\"../img/"+imagenArray[parseInt(aleatorio)]+"\"></img>"
             var posicion = imagenArray.indexOf(imagenArray[parseInt(aleatorio)]);
@@ -29,19 +26,5 @@ function imagenAleatoria(){
     }
 }
 
-function crearTablero(numeroFilas, numeroColumnas){
-    var matriz = new Array(numeroFilas);
-    for(var i = 0; i < numeroFilas; i++){
-        matriz[i] = new Array(numeroColumnas);
-    }
-    return matriz;
-}
 
-function inicializaMatriz(matriz, dato){
-    for(var i=0; i < matriz.length; i++){
-        for(var j = 0; 0 < matriz[i].length; j++){
-            matriz[i][j]=dato;
-        }
-    }
-}
 
